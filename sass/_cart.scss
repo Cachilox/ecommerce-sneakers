@@ -1,0 +1,109 @@
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: $White;
+    box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
+    border-left: 1px solid $Font-color;
+    transition: 1.5s;
+
+    @include breakpoint-down(small){
+        width: 300px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+}
+.cart.active {
+    right: 0;
+    transition: 0.6s;
+    @include breakpoint-down(small){
+        padding: 20px 20px 20px 3px;
+    }
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    @include breakpoint-down(small){
+        gap: 1.3rem;
+    }
+
+
+    &__img {
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
+        padding: 10px 15px 10px 10px;
+    }
+    &__detail {
+        display: grid;
+        row-gap: .5rem;
+    }
+    &__title {
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    &__price {
+        font-weight: 600;
+    }
+    .cart-remove {
+        font-size: 24px;
+        color: $Card-remove;
+        cursor: pointer;
+    }
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    border-top: 1px solid $Font-color;
+    &__title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+    &__price {
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+    }
+}
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 10px 50px;
+    background-color: $button;
+    box-shadow: 0 -5px $button-shadow inset;
+    color: #fff;
+    border: 1px solid $Font-color;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 -44px $button-shadow inset;
+    }
+}
+
+#cart-close {
+    position: absolute;
+    font-size: 2rem;
+    top: 1rem;
+    right: .8rem;
+    color: $Font-color;
+    cursor: pointer;
+}

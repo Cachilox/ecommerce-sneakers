@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+    text-decoration: none;
+}
+
+body{
+    font-family: $Font;
+    color: $Font-color;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding: 1rem;
+    @include breakpoint-down(medium){
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+img {
+    width: 100%;
+}
+section {
+    padding: 4rem 0 3rem;
+    @include breakpoint-down(medium){
+        padding: 3rem 0 2rem;
+    }
+}
+#swal-input1,
+#swal-input2,
+#swal-input3,
+#swal-input4 {
+    border: 1px solid $Black;
+    width: 78%;
+    color: #111;
+    font-size: .9em;
+
+    &::placeholder{
+        color: $Anuncio;
+    }
+}
+

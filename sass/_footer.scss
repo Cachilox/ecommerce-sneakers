@@ -1,0 +1,145 @@
+.footer {
+    background-color: $Font-color;
+    padding: 70px 0 20px 0;
+    margin-top: 4rem;
+
+    &__container {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__col {
+        width: 25%;
+        padding: 0 15px;
+
+        ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            font-size: 1em;
+            text-transform: capitalize;
+            color: $Gray;
+            text-decoration: none;
+            font-weight: 300;
+            display: block;
+            transition: all 0.4s ease;
+        }
+        a:hover{
+            color: $White;
+            padding-left: 8px;
+        }
+        @include breakpoint-down(footer){
+            width: 50%;
+            margin-bottom: 30px;
+        }
+        @include breakpoint-down(small){
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+    &__title {
+        font-size: 18px;
+        color: $White;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 600;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: $button-shadow;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+    }
+    &__social-links {
+        a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            color: $White;
+            transition: all 0.4s ease;
+            &:hover {
+                color: $Black;
+                padding-left: 0px;
+                background-color: $White;
+            }
+        }
+        i {
+            font-size: 1.5rem;
+        }
+    }
+    &__newsletter {
+        position: relative;
+        width: 260px;
+        display: flex;
+        gap: 0.8rem;
+    }
+    &__affiliate {
+        margin-bottom: 1.65rem;
+    }
+    &__input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $Gray;
+        background: $Font-color;
+        color: $Gray;
+        border-radius: 6px;
+        outline: none;
+        font-size: 1em;
+
+        &:valid ~ span,
+        &:focus ~ span  {
+            color: $button;
+            transform: translateX(10px) translateY(-7px);
+            font-size: 0.75em;
+            padding: 0 10px;
+            background: $Font-color;
+            border-left: 1px solid $button-shadow;
+            border-right: 1px solid $button-shadow;
+            letter-spacing: 0.2em;
+        }
+    }
+    &__mail {
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        pointer-events: none;
+        font-size: 1em;
+        transition: 0.5s;
+    }
+    &__btn {
+        @include buttons;
+    }
+    &__pay {
+        margin-top: 2rem;
+    }
+    &__pagos {
+        width: 220px;
+        height: 260px;
+    }
+}
+.copyright {
+    color: $Font-color;
+    background-color: $White;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 2px;
+    font-weight: 500;
+    @include breakpoint-down(small){
+        font-size: 0.9em;
+    }
+}

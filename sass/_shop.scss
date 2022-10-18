@@ -1,0 +1,78 @@
+.shop {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    @include breakpoint-down(medium){
+        margin-top: 2rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+        gap: 3rem;
+    }
+}
+
+.product {
+    position: relative;
+    border: 1px solid $Border-card;
+    border-radius: 8px;
+    width: 19rem;
+    margin: auto;
+    max-width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+        border-radius: 5px;
+        transform: translateY(-10px);
+    }
+
+    &__img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        padding: 15px 0 0 0;
+    }
+    &__title {
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 0.6rem;
+        text-align: left;
+    }
+    &__price {
+        font-weight: 600;
+        display: block;
+        color: $Font-color;
+        font-size: 1.3em;
+    }
+    &__cuota {
+        font-weight: 500;
+        font-size: .9em;
+        margin-bottom: 0.2rem;
+    }
+    &__envio {
+        color: #5c5cff;
+        font-weight: 500;
+        font-size: 0.85em;
+        margin-bottom: 0.6rem;
+    }
+    .add-cart {
+        @include buttons;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 0.6rem;
+    }
+}
+.hr {
+    margin-bottom: 1rem;
+}

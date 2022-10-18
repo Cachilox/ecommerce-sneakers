@@ -1,0 +1,57 @@
+// Breakpoints
+@media (min-width: 64em){
+    // styles go here
+  }
+  
+  // 640px, 1024px, 1400px
+  $breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+  
+  // 425px, Footer: 832px, contact: 928px, 1080px,
+  $breakpoints-down: ("small": "26.6em","footer": "52em", "contact": "58em", "navbar": "63.9em", "medium": "67.5em", "navbar-logo": "63.89em");
+  
+  @mixin breakpoint-up($size){
+    @media (min-width: map-get($breakpoints-up, $size)){
+      @content;
+    }
+  }
+  
+  @mixin breakpoint-down($size){
+    @media (max-width: map-get($breakpoints-down, $size)){
+      @content;
+    }
+}
+
+@mixin swiper-buttons($a, $b, $c, $d, $left, $right) {
+  --swiper-navigation-size: 20px;
+  --swiper-theme-color: #197BA8;
+  background-color: $White;
+  height: 70px;
+  width: 50px;
+  margin-top: -35px;
+  border-radius: $a $b $c $d;
+  left: $left;
+  right: $right;
+  opacity: 0;
+  transition: opacity 0.75s;
+  @include breakpoint-down(small){
+    height: 55px;
+    width: 35px;
+    margin-top: -10px;
+  }
+}
+
+@mixin buttons {
+  border: 1px solid $Gray;
+  background-color: $button;
+  box-shadow: 0 -5px $button-shadow inset;
+  color: $White;
+  font-family: $Font;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all .3s ease-in;
+  font-weight: 600;
+  &:hover {
+    box-shadow: 0 -44px $button-shadow inset;
+  }
+}

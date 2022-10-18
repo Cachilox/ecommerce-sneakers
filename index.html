@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Sneakers - Proyecto final</title>
+    <meta name="description" content="Compre las últimas tendencias de zapatillas para hombres y mujeres. Encuentre las mejores marcas en zapatillas. 
+    Cuotas sin interés, envío gratis a todo el país, con devolución.">
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ToastifyAlert -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAV -->
+        <nav class="nav container">
+            <i class='bx bx-menu'></i>
+            <a href="./index.html"><img class="nav__logo" src="./images/logo.svg" alt="icon logo"></a>
+
+            <div class="navbar">
+                <ul class="navbar__items">
+                    <li><a class="navbar__link" href="./index.html">Inicio</a></li>
+                    <li><a class="navbar__link" href="#products">Products</a></li>
+                    <li><a class="navbar__link" href="./contact.html">Contact</a></li>
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">Marcas</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                            <li class="menu__item">Nike</li>
+                            <li class="menu__item">Adidas</li>
+                            <li class="menu__item">Puma</li>
+                            <li class="menu__item">Reebox</li>
+                            <li class="menu__item">Topper</li>
+                            <li class="menu__item">Fila</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+
+
+            <!-- Start modal navbar -->
+            <div class="background"></div>
+            <div class="modal-navbar">
+                <i id="icon-close" class='bx bx-x modal-navbar__closed'></i>
+                <ul class="modal-navbar__items">
+                    <li><a class="modal-navbar__links" href="./index.html">Inicio</a></li>
+                    <li><a class="modal-navbar__links" href="#">Products</a></li>
+                    <li><a class="modal-navbar__links" href="./contact.html">Contact</a></li>
+                    <li><a class="modal-navbar__links" href="#">Marcas</a></li>
+                </ul>
+            </div>
+            <!-- End modal navbar -->
+
+            <!-- CART ICON -->
+            <i class='bx bx-shopping-bag' id="cart-icon"><span id="counter">0</span></i>
+
+            <!-- MODAL CART -->
+            <div class="cart">
+                <h2 class="cart__title">Your Cart</h2>
+
+                <!-- CONTENT -->
+                <div class="cart__content">
+
+                </div>
+
+                <!-- TOTAL -->
+                <div class="total">
+                    <div class="total__title">Total</div>
+                    <div class="total__price">$0</div>
+                </div>
+                <!-- BUY BUTTON -->
+                <button type="button" class="btn-buy">Buy now</button>
+                <!-- CART CLOSE -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </nav>
+        <div class="anuncio">
+            <i class='bx bx-package'></i>
+            <p class="anuncio__title">Envíos gratis a todo el país a partir de $ 26.000 3 cuotas sin interés</p>
+        </div>
+    </header>
+
+    <!-- Slider hero -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img class="swiper__img" src="./images/img-hero.jpg" alt="slider image 1"></div>
+            <div class="swiper-slide"><img class="swiper__img" src="./images/img-hero2.webp" alt="slider image 2"></div>
+            <div class="swiper-slide"><img class="swiper__img" src="./images/img-hero3.jpg" alt="slider image 3"></div>
+            <div class="swiper-slide"><img class="swiper__img" src="./images/img-hero4.webp" alt="slider image 4"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <!-- SHOP CONTAINER -->
+    <main>
+        <section class="shop container">
+            <h1 class="shop__title">SHOP PRODUCTS</h1>
+            <div class="filtro">
+                <form action="#" class="filtro__search-bar">
+                    <input class="filtro__input" type="text" placeholder="Buscar...">
+                    <button class="filtro__btn" type="submit"><i class='bx bx-search'></i></button>
+                </form>
+            </div>
+            <hr class="hr">
+            <span class="loader"></span>
+            <!-- CONTENT -->
+            <div id="products" class="shop__content">
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- BRAND SLIDER -->
+    <div class="slider">
+        <div class="slider__track">
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-nike.png" alt="logo nike">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-adidas.png" alt="logo adidas">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-asics.png" alt="logo asics">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-converse.png" alt="logo converse">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-fila.png" alt="logo fila">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-lotto.png" alt="logo lotto">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-puma.png" alt="logo puma">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-reebok.png" alt="logo reebok">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-topper.png" alt="logo topper">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-underarmour.png" alt="logo underarmour">
+            </div>
+
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-nike.png" alt="logo nike">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-adidas.png" alt="logo adidas">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-asics.png" alt="logo asics">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-converse.png" alt="logo converse">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-fila.png" alt="logo fila">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-lotto.png" alt="logo lotto">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-puma.png" alt="logo puma">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-reebok.png" alt="logo reebok">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-topper.png" alt="logo topper">
+            </div>
+            <div class="slider__slide">
+                <img class="slider__img" src="./images/logo-underarmour.png" alt="logo underarmour">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <h4 class="footer__title">Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#" class="footer__affiliate">Affiliate program</a></li>
+                    </ul>
+
+                    <p class="footer__title">¡Subscribe to our newsletter!</p>
+                    <form id="form" action="#" class="footer__newsletter">
+                        <input class="footer__input" type="email" name="email" id="email" required="required">
+                        <span class="footer__mail">Your mail</span>
+                        <input type="submit" id="button" value="Send" class="footer__btn">
+                    </form>
+                    <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                    <script type="text/javascript">
+                        emailjs.init('Qi9ILY9eQi9KOB4xf')
+                    </script>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Sneakers</h4>
+                    <ul>
+                        <li><a href="#">Mens</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Unisex</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Follow us</h4>
+                    <div class="footer__social-links">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://twitter.com/CachiloDev" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/cachilo/" target="_blank"><i
+                                class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <div class="footer__pay">
+                        <h4 class="footer__title">Payment methods</h4>
+                        <img class="footer__pagos" src="./images/pagos.png" alt="forma de pagos">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://github.com/Cachilox" target="_blank">
+        <div class="copyright">&copy; 2022 Copyright | Proyecto creado por Mariano Alvarez</div>
+    </a>
+
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- ToastifyAlert -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Custom script -->
+    <script src="./js/alerts.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/cart-menu.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

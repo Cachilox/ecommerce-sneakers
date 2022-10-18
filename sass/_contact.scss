@@ -1,0 +1,100 @@
+.contact {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    @include breakpoint-down(contact) {
+        grid-template-columns: 1fr;
+    }
+
+    &__title {
+        margin-top: 9rem;
+        text-align: end;
+        @include breakpoint-down(contact) {
+            text-align: center;
+        }
+    }
+    &__contact-us {
+        margin-top: 1.5rem;
+    }
+    &__phone-container {
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.3em;
+    }
+    &__phone {
+        font-size: 0.8em;
+    }
+    &__mail-container {
+        font-size: 1.3em;
+        margin-top: 0.65rem;
+        display: flex;
+        align-items: center;
+    }
+    &__mail {
+        font-size: 0.8em;
+        margin-left: 0.3rem;
+    }
+    &__location-container {
+        margin-top: 0.65rem;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+    }
+    &__location {
+        margin-left: 0.3rem;
+        font-size: 0.77em;
+    }
+    &__map {
+        margin-top: 1rem;
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.form {
+    margin-top: 13rem;
+    width: 100%;
+    @include breakpoint-down(contact) {
+        margin-top: 2.5rem;
+    }
+    
+    &__input {
+        width: 100%;
+        padding: 6px 12px;
+        font-size: 1.2rem;
+        border: 1px solid $Anuncio;
+        border-radius: 5px;
+        margin-top: 0.3rem;
+        margin-bottom: 1rem;
+        outline: none;
+        &:focus{
+            border: 1px solid $button;
+        }
+    }
+    .textarea {
+        max-width: 565px;
+        min-height: 565px;
+        min-height: 150px;
+        max-height: 160px;
+        @include breakpoint-down(contact){
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &__btn {
+        padding: 12px 40px;
+        border: transparent;
+        background-color: $button;
+        color: $White;
+        cursor: pointer;
+        float: right;
+        border-radius: 4px;
+        font-size: 1.1em;
+        &:hover{
+            background-color: $button-shadow;
+        }
+    }
+}
+

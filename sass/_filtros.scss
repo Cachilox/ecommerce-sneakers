@@ -1,0 +1,49 @@
+.filtro {
+    width: 100%;
+    margin-bottom: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint-down(footer){
+        margin-bottom: 1rem;
+    }
+
+    &__search-bar {
+        width: 100%;
+        max-width: 22rem;
+        height: 3.5rem;
+        background: $White;
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+        padding: 5px 10px;
+        border: 2px solid $Font-color;
+        position: relative
+    }
+    &__input {
+        background: transparent;
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 10px 10px;
+        font-size: 1.1rem;
+        color: $Black;
+        &::placeholder {
+            color: $Black;
+        }
+    }
+    &__btn {
+        border: 0;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: $button-shadow;
+        position: absolute;
+        right: 8px;
+        cursor: pointer;
+        
+        i {
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -1,0 +1,254 @@
+[
+    {
+       "id": 1,
+       "name":"nike air force 1",
+       "price": 24000,
+       "img":"./images/nike1.webp",
+       "cuota": "3 cuotas de $8.000"
+    },
+    {
+       "id": 2,
+       "name":"nike x billie eilish",
+       "price": 35000,
+       "img":"./images/nike2.webp",
+       "cuota": "3 cuotas de $11.666"
+    },
+    {
+       "id": 3,
+       "name":"nike air jordan 1 mid",
+       "price": 30000,
+       "img":"./images/nike3.jpg",
+       "cuota": "3 cuotas de $10.000"
+    },
+    {
+       "id": 4,
+       "name":"nike air force 1 mid",
+       "price": 28000,
+       "img":"./images/nike4.webp",
+       "cuota": "3 cuotas de $9.333"
+    },
+    {
+       "id": 5,
+       "name":"nike air jordan 1 elevate low",
+       "price": 27000,
+       "img":"./images/nike5.webp",
+       "cuota": "3 cuotas de $9.000"
+    },
+    {
+       "id": 6,
+       "name":"nike air jordan 1 elevate low",
+       "price": 27000,
+       "img":"./images/nike6.webp",
+       "cuota": "3 cuotas de $9.000"
+    },
+    {
+       "id": 7,
+       "name":"nike air jordan 5 retro se",
+       "price": 33000,
+       "img":"./images/nike7.webp",
+       "cuota": "3 cuotas de $11.000"
+    },
+    {
+       "id": 8,
+       "name":"nike air jordan 1 hi flyease",
+       "price": 30000,
+       "img":"./images/nike8.webp",
+       "cuota": "3 cuotas de $10.000"
+    },
+    {
+       "id": 9,
+       "name":"nike yellow and black",
+       "price": 33000,
+       "img":"./images/nike9.webp",
+       "cuota": "3 cuotas de $11.000"
+    },
+    {
+      "id": 10,
+      "name": "air jordan 5 retro",
+      "price": 32000,
+      "img": "./images/nike10.webp",
+      "cuota": "3 cuotas de $10.666"
+    },
+    {
+      "id": 11,
+      "name": "nike air max",
+      "price": 34000,
+      "img": "./images/nike11.jpg",
+      "cuota": "3 cuotas de $11.333"
+    },
+    {
+      "id": 12,
+      "name": "nike air max 97",
+      "price": 56000,
+      "img": "./images/nike12.jpg",
+      "cuota": "3 cuotas de $18.666"
+    },
+    {
+      "id": 13,
+      "name": "adidas forum low cl",
+      "price": 41000,
+      "img": "./images/adidas1.webp",
+      "cuota": "3 cuotas de $13,666"
+    },
+    {
+      "id": 14,
+      "name": "adidas forum mid",
+      "price": 37000,
+      "img": "./images/adidas2.webp",
+      "cuota": "3 cuotas de $12.333"
+    },
+    {
+      "id": 15,
+      "name": "adidas grand court",
+      "price": 18000,
+      "img": "./images/adidas3.webp",
+      "cuota": "3 cuotas de $6.000"
+    },
+    {
+      "id": 16,
+      "name": "adidas trail running",
+      "price": 31000,
+      "img": "./images/adidas4.webp",
+      "cuota": "3 cuotas de $10.333"
+    },
+    {
+      "id": 17,
+      "name": "adidas supernova 2.0",
+      "price": 30000,
+      "img": "./images/adidas5.webp",
+      "cuota": "3 cuotas de $10.000"
+    },
+    {
+      "id": 18,
+      "name": "adidas ADI2000",
+      "price": 36000,
+      "img": "./images/adidas6.webp",
+      "cuota": "3 cuotas de $12.000"
+    },
+    {
+      "id": 19,
+      "name": "adidas futro mixer",
+      "price": 27000,
+      "img": "./images/adidas7.webp",
+      "cuota": "3 cuotas de $9.000"
+    },
+    {
+      "id": 20,
+      "name": "adidas ultraboost",
+      "price": 60000,
+      "img": "./images/adidas8.webp",
+      "cuota": "3 cuotas de $20.000"
+    },
+    {
+      "id": 21,
+      "name": "adidas equipment 10",
+      "price": 33000,
+      "img": "./images/adidas9.webp",
+      "cuota": "3 cuotas de $11.000"
+    },
+    {
+      "id": 22,
+      "name": "adidas x9000l4",
+      "price": 43000,
+      "img": "./images/adidas10.webp",
+      "cuota": "3 cuotas de $14.333"
+    },
+    {
+      "id": 23,
+      "name": "adidas ultraboost",
+      "price": 54000,
+      "img": "./images/adidas11.webp",
+      "cuota": "3 cuotas de $18.000"
+    },
+    {
+      "id": 24,
+      "name": "adidas ultraboost",
+      "price": 53000,
+      "img": "./images/adidas12.webp",
+      "cuota": "3 cuotas de $17.666"
+    },
+    {
+      "id": 25,
+      "name": "nike air max Sc",
+      "price": 32400,
+      "img": "./images/nike-mujer-13.jpg",
+      "cuota": "3 cuotas de $10.800"
+    },
+    {
+      "id": 26,
+      "name": "nike quest 4",
+      "price": 30000,
+      "img": "./images/nike-mujer-14.jpg",
+      "cuota": "3 cuotas de $10.000"
+    },
+    {
+      "id": 27,
+      "name": "nike react escape 2",
+      "price": 39600,
+      "img": "./images/nike-mujer-15.jpg",
+      "cuota": "3 cuotas de $13.200"
+    },
+    {
+      "id": 28,
+      "name": "nike air max intrlk 75",
+      "price": 31800,
+      "img": "./images/nike-mujer-16.jpg",
+      "cuota": "3 cuotas de $10.600"
+    },
+    {
+      "id": 29,
+      "name": "adidas duramo 10",
+      "price": 24200,
+      "img": "./images/adidas-mujer-13.jpg",
+      "cuota": "3 cuotas de $8.066"
+    },
+    {
+      "id": 30,
+      "name": "adidas Grand Court",
+      "price": 23000,
+      "img": "./images/adidas-mujer-14.jpg",
+      "cuota": "3 cuotas de $7.666"
+    },
+    {
+      "id": 31,
+      "name": "adidas Runfalcon 2.0",
+      "price": 20900,
+      "img": "./images/adidas-mujer-15.jpg",
+      "cuota": "3 cuotas de $6.966"
+    },
+    {
+      "id": 32,
+      "name": "asics patriot 12",
+      "price": 17000,
+      "img": "./images/adidas-mujer-16.jpg",
+      "cuota": "3 cuotas de $5.666"
+    },
+    {
+      "id": 33,
+      "name": "nike legend essential 2",
+      "price": 24000,
+      "img": "./images/nike-mujer-17.jpg",
+      "cuota": "3 cuotas de $8.000"
+    },
+    {
+      "id": 34,
+      "name": "nike air max ap",
+      "price": 44000,
+      "img": "./images/nike-mujer-18.jpg",
+      "cuota": "3 cuotas de $14.666"
+    },
+    {
+      "id": 35,
+      "name": "nike air max Intrlk",
+      "price": 43200,
+      "img": "./images/nike-mujer-19.jpg",
+      "cuota": "3 cuotas de $14.400"
+    },
+    {
+      "id": 36,
+      "name": "nike air max bella tr 5",
+      "price": 34000,
+      "img": "./images/nike-mujer-20.jpg",
+      "cuota": "3 cuotas de $11.333"
+    }
+ ]
